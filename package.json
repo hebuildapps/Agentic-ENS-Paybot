@@ -1,0 +1,35 @@
+{
+  "name": "agentic-ens-paybot",
+  "version": "1.0.0",
+  "description": "AI agent for processing natural language payment commands using ENS resolution",
+  "main": "ens-resolver.js",
+  "scripts": {
+    "test": "node tests/ens-resolver.test.js",
+    "demo": "node ens-resolver.js",
+    "lint": "echo 'Linting not configured yet'",
+    "start": "node ens-resolver.js"
+  },
+  "keywords": [
+    "ens",
+    "ethereum",
+    "blockchain",
+    "ai-agent",
+    "payments",
+    "web3"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@metamask/sdk": "^0.33.1",
+    "dotenv": "^17.2.2",
+    "ethers": "^6.15.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/agentic-ens-paybot.git"
+  }
+}
