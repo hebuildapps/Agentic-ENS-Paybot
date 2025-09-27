@@ -1,13 +1,12 @@
 {
-  "name": "agentic-ens-paybot",
+  "name": "ens-pay-agent",
   "version": "1.0.0",
-  "description": "AI agent for processing natural language payment commands using ENS resolution",
-  "main": "ens-resolver.js",
+  "description": "Send USDC to ENS names via AI agent",
+  "main": "src/agent-core.js",
   "scripts": {
-    "test": "node tests/ens-resolver.test.js",
-    "demo": "node ens-resolver.js",
-    "lint": "echo 'Linting not configured yet'",
-    "start": "node ens-resolver.js"
+    "start": "node api.js",
+    "cli": "node cli.js",
+    "test": "node cli.js 'Send 1 USDC to alice.eth' --user 0x18D1eb50fA3A91250217a7F74421283a12745586 --chain 11155111"
   },
   "keywords": [
     "ens",
@@ -23,6 +22,7 @@
   "dependencies": {
     "@metamask/sdk": "^0.33.1",
     "dotenv": "^17.2.2",
+    "express": "^4.18.0",
     "ethers": "^6.15.0"
   },
   "engines": {

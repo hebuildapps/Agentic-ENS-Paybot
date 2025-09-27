@@ -1,0 +1,17 @@
+{
+  "name": "ENS Pay Agent",
+  "description": "Send USDC to ENS names with natural language commands",
+  "version": "1.0.0",
+  "entryPoint": "agentverse-wrapper.js",
+  "requirements": {
+    "walletConnection": true,
+    "supportedChains": [1, 137, 11155111],
+    "permissions": ["eth_sendTransaction", "eth_sign"]
+  },
+  "examples": [
+    "Send 5 USDC to alice.eth",
+    "Transfer 10 USDC to bob.eth",
+    "Pay 25 USDC to charlie.eth"
+  ],
+  "tags": ["payment", "ENS", "USDC", "DeFi"]
+}
